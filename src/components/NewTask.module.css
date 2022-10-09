@@ -1,0 +1,43 @@
+.newTask {
+  margin-top: calc(0px - 1.75rem);
+}
+
+.formTask {
+  width: 100%;
+  display: flex;
+  gap: 0.5rem;
+}
+
+.formTask input {
+  flex: 1;
+  background-color: var(--gray-500);
+  border: 1px solid var(--gray-700);
+  border-radius: 0.5rem;
+  padding: 1rem;
+  color: var(--gray-100);
+}
+
+.formTask input:focus {
+  box-shadow: 0 0 0 0;
+  border: 1px solid var(--purple-400);
+}
+
+.formTask button {
+  padding: 1rem;
+  background-color: var(--blue-400);
+  border: 0;
+  border-radius: 0.5rem;
+
+  font-weight: 700;
+  font-size: 0.87rem;
+  color: var(--gray-100);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.formTask button:hover {
+  background-color: var(--blue-300);
+}

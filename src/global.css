@@ -16,6 +16,11 @@
   --red-300: #e25858;
 }
 
+:focus {
+  outline: transparent;
+  box-shadow: 0 0 0 1px var(--purple-400);
+}
+
 * {
   margin: 0;
   padding: 0;
