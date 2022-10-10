@@ -6,6 +6,7 @@
   width: 100%;
   display: flex;
   gap: 0.5rem;
+  margin-bottom: 4rem;
 }
 
 .formTask input {
@@ -40,4 +41,35 @@
 
 .formTask button:hover {
   background-color: var(--blue-300);
+}
+
+.headerTasks {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.87rem;
+}
+
+.tasksCreated,
+.tasksConcluded {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.tasksCreated strong {
+  color: var(--blue-300);
+}
+
+.tasksConcluded strong {
+  color: var(--purple-300);
+}
+
+.tasksCreated span,
+.tasksConcluded span {
+  font-size: 0.75rem;
+
+  background-color: var(--gray-400);
+  padding: 0.12rem 0.5rem;
+  border-radius: 62.44rem;
 }

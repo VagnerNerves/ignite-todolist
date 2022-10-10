@@ -14,14 +14,12 @@ export function NewTask() {
   const [tasks, setTasks] = useState<Task[]>([])
   const [newTaskText, setNewTaskText] = useState('')
 
-  console.log(tasks)
-
   function handleCreatNewTask(event: FormEvent) {
     event.preventDefault()
 
     setTasks([
       {
-        id: uuidv4(), //Colocar o Uiui id aqui
+        id: uuidv4(),
         concluded: false,
         description: newTaskText
       },
@@ -40,6 +38,11 @@ export function NewTask() {
     event.target.setCustomValidity('Esta campo é obrigatório!')
   }
 
+  const totalTasks = tasks.length
+  const totalTasksConcluded = tasks.filter(
+    task => task.concluded === true
+  ).length
+
   return (
     <div className={style.newTask}>
       <form onSubmit={handleCreatNewTask} className={style.formTask}>
@@ -55,9 +58,19 @@ export function NewTask() {
           Criar <PlusCircle size={16} weight="bold" />
         </button>
       </form>
-      <div>
-        <p>Tasks</p>
-      </div>
+
+      <header className={style.headerTasks}>
+        <div className={style.tasksCreated}>
+          <strong>Tarefas criadas</strong>
+          <span>{totalTasks}</span>
+        </div>
+        <div className={style.tasksConcluded}>
+          <strong>Concluídas</strong>
+          <span>
+            {totalTasksConcluded} de {totalTasks}
+          </span>
+        </div>
+      </header>
     </div>
   )
 }
