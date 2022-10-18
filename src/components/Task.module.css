@@ -1,0 +1,85 @@
+.task {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  background: var(--gray-400);
+  padding: 1rem;
+  border-radius: 0.5rem;
+}
+
+.task + .task {
+  margin-top: 0.75rem;
+}
+
+.description {
+  flex: 1;
+  font-size: 0.87rem;
+  color: var(--gray-100);
+  line-height: 140%;
+
+  word-break: break-all;
+}
+
+.descriptionConcluded {
+  text-decoration: line-through;
+  color: var(--gray-300);
+}
+
+.trash {
+  width: 1.5rem;
+  height: 1.5rem;
+
+  background: transparent;
+  border: none;
+
+  color: var(--gray-300);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.trash:hover {
+  background: var(--gray-400);
+  border-radius: 0.25rem;
+  color: var(--red-300);
+}
+
+.btnCheck {
+  width: 1.09rem;
+  height: 1.09rem;
+  margin: 0.2rem;
+
+  border-radius: 50%;
+
+  color: var(--gray-100);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.checked {
+  border: 2px solid var(--purple-400);
+  background-color: var(--purple-400);
+}
+
+.checked:hover {
+  background-color: var(--purple-300);
+  border: 2px solid var(--purple-300);
+}
+
+.unchecked {
+  border: 2px solid var(--blue-300);
+  background-color: var(--gray-400);
+}
+
+.unchecked svg {
+  visibility: hidden;
+}
+
+.unchecked:hover {
+  background-color: rgba(30, 111, 159, 0.2);
+}
