@@ -47,6 +47,8 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.87rem;
+
+  margin-bottom: 1.5rem;
 }
 
 .tasksCreated,
@@ -72,4 +74,27 @@
   background-color: var(--gray-400);
   padding: 0.12rem 0.5rem;
   border-radius: 62.44rem;
+}
+
+.taskEmpty {
+  padding: 4rem 1.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.taskEmpty img {
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.taskEmpty strong {
+  margin-top: 1rem;
+}
+
+.taskEmpty strong,
+.taskEmpty span {
+  color: var(--gray-300);
 }
