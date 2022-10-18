@@ -2,7 +2,7 @@
   <img alt="Todo List" title="Todo List" src="./src/assets/todo-logo.svg" />
 </h1>
 
-🚧 Project under construction 🚧
+Developed In this project a task control where you can add tasks, being able to mark them as completed and also delete them.
 
 ## 🎨 Layout
 
@@ -13,10 +13,16 @@ Layout developed by [Millena Kupsinskü Martins](https://www.instagram.com/mille
 <!-- ## 🎥 Implementation Video
 
 In the GitHub edit, drag the video that it already puts on github itself.
+-->
 
 ## 👏 Learning and more implementations
 
-Describe what you learned and implemented in the project. -->
+In this project I learned and implemented:
+
+- UseState - where we update the state of the variable, thus automatically changing the component.
+- Pass properties and functions to other components.
+- Use of TyScript
+- Implemented the uuid library for generating IDs.
 
 ## 💡 Technologies used
 
