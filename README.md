@@ -10,10 +10,14 @@ Layout developed by [Millena Kupsinskü Martins](https://www.instagram.com/mille
 
 [![Layout in Figma](https://github.com/VagnerNerves/default-readme/blob/main/assets/layout-in-figma.svg)](<https://www.figma.com/file/N6JcSTFi4CpJlgPTBDVutq/ToDo-List-(Copy)?node-id=0%3A1>)
 
-<!-- ## 🎥 Implementation Video
+## 🎥 Implementation Video
 
-In the GitHub edit, drag the video that it already puts on github itself.
--->
+
+
+https://user-images.githubusercontent.com/40831841/196800805-9fd35a10-5fa7-4df3-995c-f6b1b88cde3f.mp4
+
+
+
 
 ## 👏 Learning and more implementations
 
